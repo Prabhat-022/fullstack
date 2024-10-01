@@ -11,7 +11,7 @@ const Singup = () => {
   const submitdata = async (e) => {
     e.preventDefault();
     
-    const response = await fetch('http://localhost:5000/register', {
+    const response = await fetch('https://demo-jvzg.onrender.com/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
