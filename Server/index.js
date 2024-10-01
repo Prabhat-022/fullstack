@@ -87,6 +87,10 @@ const User = mongoose.model('User', userSchema);
 app.get('*', (req, res)=>{
   res.sendFile(path.resolve(_dirname, "Client", "dist", "index.html"))
 })
+
+app.get('/', (req,res)=>{
+  res.send("Hello world")
+})
 // Routes
 app.post('/register', async (req, res) => {
   const { name, email, password } = req.body;
