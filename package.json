@@ -11,7 +11,7 @@
   "description": "This is sing-up page",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server/index.js",
+    "start": "nodemon Server/index.js",
     "build":"npm install && npm install --prefix Client && npm run build --prefix Client"
   },
   "author": "Prabhat kumar",
